@@ -1,0 +1,18 @@
+Nome....: Samuel Amaro
+Email...: samuel@band.com.br
+Telefone: (61) 99999-9999
+Obs.....: testando gravação de dados no arquivo
+
+
+Nome....: sou Basica
+Email...: basica@basicas.com.br
+Telefone: (61) 3631-3489
+Obs.....: sou basica cosmeticos
+
+
+Nome....: pioner sementes
+Email...: pioner@sementes.com.gov.br
+Telefone: (61) 99999-0000
+Obs.....: pioneira em seleção das melhores sementes
+
+

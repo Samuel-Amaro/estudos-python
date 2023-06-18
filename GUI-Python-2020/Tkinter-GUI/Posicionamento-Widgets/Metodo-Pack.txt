@@ -1,0 +1,65 @@
+# METODO PACK DE POSICIONAMENTO
+
+argumento descrição como usar;
+
+fill = permite que o widget se expanda em X,Y,OU ambos os eixos,ocupando maior espaço caso a janela seja redimensionada
+
+self.coisa.pack(fill=tk.EIXO) no qual o EIXO é que o widget irá se expandir. Pode ser: X,Y ou BOTH(ambos os eixos)
+
+----------------------------------------------
+
+expand = faz com que o widget cresça juntamente com o widgetPai, ou seja, o widget criado vai ocupar todo o espaço que o widgetPai possui. isso ocorre se o valor expand for verdadeiro(TRUE) caso contrario, nada mudara;
+
+self.coisa.pack(expand=Opcao) no qual a Opção pode ser TRUE se o widget ocupara o mesmo espaço que o widgetPai, ou false se os tamanhos mudam indepententemente;
+
+-----------------------------------------------------
+side = define um lador para o qual o widget irá, ou seja, indica-se um lado: topo, esquerda,direita,baixo, e o widget será deslocado para esse lado;
+
+self.coisa.pack(side=tk.LADO) no qual LADO é o lado que o widget será posicionado, que pode ser: TOP(topo), LEFT(esquerda),RIGHT(direita) ou BOTTOM(baixo);
+
+---------------------------------------------------------
+
+padx = adiciona uma margem externa no eixo X(horizontalmente) ao widget. Medido em pixels;
+
+ipadx = adiciona uma margem interna no eixo X(horizontalmente) ao widget. Medido em pixels;
+
+Externa: self.widget.pack(padx=TAMANHO)
+Interna: self.widget.pack(ipadx=TAMANHO)
+
+no qual TAMANHO é o valor em pixels da margem desejada;
+
+--------------------------------------------------------
+
+pady = adiciona uma margem externa no eixo Y (verticalmente) ao widget. Medido em pixels;
+
+ipady = adiciona uma margem interna no eixo Y (verticalmente) ao WIDGET medido em pixels
+
+Externa: self.widget.pack(pady=TAMANHO)
+Interna: self.widget.pack(ipady=TAMANHO)
+
+------------------------------------------------------
+
+after = o objeto empacotado com esse atributo, será empacotado após um outro objeto especificado;
+podendo assim, inverter a ordem de empacotamento;
+
+self.coisa.pack(after = self.obejto)
+no qual self.obejto é um outro widget que sera empacotado antes do widget atual;
+
+-------------------------------------------------------
+
+before = o objeto empacotado com esse atributo será empacotado antes de um outro objeto especificado;
+Podendo assim, inverter a ordem de empacotamento;
+
+self.coisa.pack(before = self.obejto)
+
+no qual self.obejto é um outro widget que sera empacotado depois do widget atual;
+
+--------------------------------------------------------
+
+anchor = define uma ancora ao widget;
+
+essa ancora aceita valores como: N(para norte),
+S(Sul),W(oeste), etc...
+Especifica a posição na qual o widget será inserido.
+por padrão o widget tem a ancora no centro;
+CENTER isso faz com que ele fique centralizado na janela. mudando a ancora, mudamos como o widget ira se comportar;

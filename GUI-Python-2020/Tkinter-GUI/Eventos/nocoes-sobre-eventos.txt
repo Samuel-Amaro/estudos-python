@@ -1,0 +1,122 @@
+# NOCÕES SOBRE EVENTOS
+
+    - EVENTOS: SÃO QUALQUER INTEREÇÃO RELIZADA PELO USUARIO COM A NOSSA APLICAÇÃO;
+    SEJA POR MEIO DE CLIQUE DO MOUSE EM WIDGETS OU POR CLIQUES NA JANELA;
+
+    - TRATADORES DE EVENTOS: SÃO FUNÇÕES QUE FICAM ESPERANDO ALGUM EVENTO OCORRER PARA SEREM EXECUTADAS, SÃO AS RESPOSTAS PARA OS EVENTOS;
+
+    - BIND: E LITERALMENTE O EVENTO AO TRATADOR DE EVENTO, ELE LIGA O EVENTO AO TRATADOR DE EVENTO, E O INTERMEDIARIO, ELE QUE FAZ A PONTE ENTRE ELES; LIGAÇÃO DO EVENTO COM O TRATADOR DO EVENTO;
+
+* LISTA DE EVENTOS NO TKINTER:
+
+- CLIQUE DO BOTÃO DO MOUSE: o evento ocorre quando algum botão do mouse é apertado. os botões são representados entre os números 1 e 5;
+  "<Button-X>": onde X é um numero de 1 a 5;
+  <Button-1>: botão esquerdo do mouse;
+  <Button-2>: botão do meio (scroll) do mouse;
+  <Button-3>: botão direito do mouse;
+  <Button-4>: refere-se ao scroll para cima no mouse;
+  <Button-5>: refere-se ao sroll para baixo no mouse;
+
+CLIQUE E ARRASTO DO MOUSE:
+
+“< Motion >”	O evento ocorre quando algum botão do mouse é apertado e em seguida, sem soltar o botão, o mouse é movido.
+< B1-Motion > : Clique com o botão esquerdo do mouse, seguido de movimentação.
+< B2-Motion > : Clique com o botão do meio (scroll) do mouse, seguido de movimentação.
+< B3-Motion > : Clique com o botão direito do mouse, seguido de movimentação
+A posição é dada em X e Y, passados pelo objeto especial da event handler, event.
+
+SOLTAR O BOTÃO DO MOUSE:
+
+“< ButtonRelease >”	O evento ocorre quando o botão do mouse é solto.
+< ButtonRelease-1 > : Botão esquerdo do mouse.
+< ButtonRelease-2 > : Botão do meio (scroll) do mouse.
+< ButtonRelease-3 > : Botão direito do mouse.
+
+DUPLO CLIQUE DO MOUSE:
+
+“< Double-Button >”	Similar ao <Button> evento (citado acima), porém quando o clique é feito duas vezes.
+Para selecionar qual botão do mouse utiliza-se < Double-Button-1 > para o botão direito do mouse, < Double-Button-2 > para o botão do meio (scroll) do mouse ou < Double-Button-3 > para o botão direito do mouse.
+
+PONTEIRO DO MOUSE ENTRA NO WIDGET:
+
+“< Enter >”	Atenção! Esse evento corresponde a ação do ponteiro do mouse entrar no widget!O nome não se refere ao Enter do teclado!
+
+PONTEIRO DO MOUSE SAI NO WIDGET:
+
+“< Leave >”	O evento ocorre quando o ponteiro do mouse sai do widget.
+GANHO DE FOCO:
+
+“< FocusIn >”	O evento ocorre quando, pelo teclado, o widget ganha foco.
+PERCA DE FOCO:
+
+“< FocusOut >”	O evento ocorre quando, pelo teclado, o foco muda do widget em questão para outro widget.
+
+PRESSIONAR A TECLA ENTER:
+
+“< Return >”	O evento ocorre quando a tecla enter é pressionada no teclado.
+Existem outras teclas especiais que adotam nomes diferentes, essas são:
+<Cancel>: A tecla Break
+<BackSpace>: A tecla backspace.
+<Tab>
+<Shift_L>: qualquer tecla shift (esquerda ou direita)
+<Control_L>: qualquer tecla Ctrl (esquerda ou direita)
+<Alt_L>: qualquer tecla alt (esquerda ou direita)
+<Pause>: a tecla pause
+<Caps_Lock>: a tecla capsLock.
+<Escape>: a tecla esc.
+<Prior>: tecla pageUp (pg Up)
+<Next>: tecla pageDown (pg Dn)
+<End>: a tecla End.
+<Home>
+<Left>: seta para esquerda.
+<Up>: seta para cima.
+<Right>: seta para direita.
+<Down>: seta para baixo.
+<Print>, <Insert>, <Delete>
+<F1>,<F2>,<F3>,<F4>,<F1>,<F5>,<F6>, até F12.
+<Num_Lock> e <Scroll_Lock>
+
+OUTRAS TECLAS:
+
+“< Key >”	Evento ocorre quando é pressionada alguma tecla que não foi citada no evento acima, ou seja, as teclas convencionais.
+A tecla é passada no objeto especial event do eventhandler.
+
+USUÁRIO APERTA O SHIFT SEGUIDO DA SETA PARA CIMA:
+
+“< Shift-Up >”	O evento ocorre quando o usuário aperta a seta para cima enquanto pressiona a tecla shift. Pode ser usado também Alt, Shift e Control no antes do “-Up”.
+A tecla é passada no objeto especial event do eventhandler.
+
+O TAMANHO DO WIDGET É ALTERADO:
+
+“< Configure >”	O evento ocorre quando o tamanho do widget foi mudado. O novo tamanho é passado pelo objeto especial event no eventHandler, nos atributos width e height.
+
+EVENTOS DISPONIVEIS: os eventos mais comumentos usados
+
+<Activate>
+A janela tornou-se ativa.
+<Deactivate>
+A janela foi desativada.
+<MouseWheel>
+A roda de rolagem do mouse foi movida.
+<KeyPress>
+A tecla do teclado foi pressionada.
+<KeyRelease>
+A chave foi lançada.
+<ButtonPress>
+Um botão do mouse foi pressionado.
+<ButtonRelease>
+Um botão do mouse foi liberado.
+<Motion>
+O mouse foi movido.
+<Configure>
+O widget mudou de tamanho ou posição.
+<Destroy>
+O widget está sendo destruído.
+<FocusIn>
+O widget recebeu o foco do teclado.
+<FocusOut>
+O widget perdeu o foco do teclado.
+<Enter>
+O ponteiro do mouse entra no widget.
+<Leave>
+O ponteiro do mouse deixa o widget.
